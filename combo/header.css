@@ -1,0 +1,137 @@
+body 
+{
+  --main-color:rgb(0, 0, 0);
+  padding: 58px 0px 0px;
+}
+
+.Header
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  box-shadow: 0px 1px 3px rgba(104, 104, 104, 0.664);
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header-denchikcom
+{
+  margin-left: 3%;
+  color: white;
+  font-size: 30px;
+  font-family:sans-serif;
+  font-weight: bold;
+  cursor: default;
+}
+.Header-buttons
+{
+  margin-right: 1.5%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 450px;
+  position: relative;
+}
+.Header-button-active
+{
+  background-color: white !important;
+  color: var(--main-color) !important;
+}
+.Header-buttons button
+{
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  padding: 7px 13px;
+  font-family:'Segoe UI', Tahoma;
+  font-weight: bold;
+  /* margin-right: 15px; */
+  width: 80px;
+  cursor: pointer;
+  transition: 0.15s;
+  margin-left: 10px;
+}
+.Header-buttons button:hover
+{
+  background-color: white;
+  color: var(--main-color);
+  transform: scale(1.1);
+}
+
+.Header-buttons-donate
+{
+  position: relative;
+  margin-left: 10px;
+  height: 35px;
+  padding: 5px !important;
+  width: 35px !important;
+  transition: border-color 0.2s, background-color 0.2s, transform 0.8s    !important;
+
+}
+.Header-buttons-donate:hover
+{
+  border-color:orange ;
+  background-color: orange !important;
+  color: white !important;
+  transform: rotate(360deg) !important;
+}
+
+.Header-buttons-donate-active
+{
+  border-color:orange ;
+  background-color: orange !important;
+  color: white !important;
+}
+
+.Header-donate
+{
+  height: 180px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.151);
+  background-color: rgb(253, 253, 253);
+  color: rgb(34, 34, 34);
+  position: absolute;
+  bottom: -180px;
+  left: 107px;
+  right: -10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+
+  transition:0.2s;
+}
+.Header-donate div{font-size: 23px; margin: 10px;line-height: 35px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.Header-donate h2 {margin: 10px;text-align: center;width: 95%;font-family:Verdana, Geneva, Tahoma, sans-serif;}
+.Header-donate h5 {margin: 10px;text-align: center;width: 95%;font-family: Arial, Helvetica, sans-serif;font-size: 11px;}
+
+.Header-donate-active
+{
+  bottom: -200px;
+  opacity: 1;
+  pointer-events:all;
+}
+
+@media(max-width:620px)
+{
+  .Header-donate div{font-size: 12px; margin: 0px; line-height: 25px;}
+  .Header-donate h2 {font-size: 13px;}
+  .Header-donate h5 {font-size: 8px; margin-top: 0px;}
+  .Header-donate    {left:20px; height: 130px;bottom: -135px;}
+}
+
+@media(max-width:645px)
+{
+  .Header-buttons a button {padding: 5px 5px;;width: 33px;}
+  .Header-buttons {justify-content: flex-end;}
+}

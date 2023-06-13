@@ -1,0 +1,10 @@
+.basement
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 25px;
+  cursor: default;
+}

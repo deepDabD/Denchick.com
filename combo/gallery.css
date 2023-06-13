@@ -1,0 +1,73 @@
+
+a
+{
+  text-decoration: none;
+  color: aqua;
+  transition: 0.15s;
+}
+a:hover
+{
+  color: rgb(179, 255, 255);
+}
+
+.basement
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 25px;
+  cursor: default;
+}
+
+.Photos-holder
+{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo
+{
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.13);
+  width: 95%;
+  display: flex;
+}
+.photo-img
+{
+  border: 1px solid rgba(128, 128, 128, 0.178);
+  width: 440px;
+  height: 590px;
+  object-fit: contain;
+
+  object-position: top;
+}
+.photo-info
+{
+  margin: 0px 8px 0px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  /* line-height: 30px */
+}
+.photo-info h3
+{
+  margin: 10px 0px 30px;
+  font-size: 30px;
+}
+@media(max-width:900px)
+{
+  .photo-img {width: 270px; height: 360px;}
+  .photo-info h3 {margin: 10px 0px 15px;}
+  .photo-info {font-size: 17px;}
+  .photo-info h3 {font-size: 20px;}
+}
+@media(max-width:620px)
+{
+  .photo-img {width: 180px; height: 240px;}
+  .photo-info h3 {margin: 10px 0px 15px;}
+  .photo-info {font-size: 11px;}
+  .photo-info h3 {font-size: 14px;}
+}
