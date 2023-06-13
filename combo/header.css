@@ -134,4 +134,5 @@ body
 {
   .Header-buttons a button {padding: 5px 5px;;width: 33px;}
   .Header-buttons {justify-content: flex-end;}
+  .Header-denchikcom {font-size: 23px;}
 }
